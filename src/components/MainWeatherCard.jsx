@@ -111,7 +111,7 @@ const MainWeatherCard = ({ weatherData, onUpdateWeather, maxTemp, minTemp, nextP
         return <img src={nieve} alt="Nieve" style={{ marginLeft: '10px', width: '8rem', height: '8rem' }} />;
       } else if (weatherDescription.includes("Tormenta eléctrica")) {
         return <img src={tormentaDia} alt="Tormenta eléctrica" style={{ marginLeft: '10px', width: '8rem', height: '8rem' }} />;
-      } else if (weatherDescription.includes("Lloviznna")) {
+      } else if (weatherDescription.includes("Lloviznna")||weatherDescription.includes("Llovizna")) {
         return <img src={lloviznaDia} alt="Llovizna" style={{ marginLeft: '10px', width: '8rem', height: '8rem' }} />;
       } else if (weatherDescription.includes("Nubocidad parcial")) {
         return <img src={parcialmenteNublado} alt="Nubocidad parcial" style={{ marginLeft: '10px', width: '8rem', height: '8rem' }} />;
