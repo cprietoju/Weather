@@ -112,7 +112,7 @@ const WeatherSummary = ({ hourlyTemperatures, weatherData }) => {
         return <img src={nieve} alt="Nieve" style={climaIconStyles} />;
       } else if (translated.includes("Tormenta eléctrica")) {
         return <img src={tormentaDia} alt="Tormenta eléctrica" style={climaIconStyles} />;
-      } else if (translated.includes("Llovizna")) {
+      } else if (translated.includes("Llovizna")|| translated.includes("Llovizna ligera")) {
         return <img src={lloviznaDia} alt="Llovizna" style={climaIconStyles} />;
       } else if (translated.includes("Nubocidad parcial")) {
         return <img src={parcialmenteNublado} alt="Nubocidad parcial" style={climaIconStyles} />;
